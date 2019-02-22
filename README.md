@@ -1,5 +1,9 @@
 # Njk HTML loader for webpack
 
+## Installation
+
+`npm install njk-html-loader`
+
 ## Usage
 
 In your sources:
