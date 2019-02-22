@@ -1,0 +1,11 @@
+{% extends "components/layout.njk" %}
+
+{% from "components/d.njk" import d %}
+
+{% set title = "Macro" %}
+
+{% block body %}
+
+  {{ d('some text') }}
+
+{% endblock %}

@@ -36,6 +36,9 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
+    "commitizen": "^3.0.7",
+    "conventional-changelog-cli": "^2.0.12",
+    "cz-conventional-changelog": "^2.1.0",
     "eslint": "^5.14.1",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.16.0",
@@ -45,9 +48,16 @@
     "memory-fs": "^0.4.1",
     "webpack": "^4.29.5"
   },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
   "scripts": {
+    "commit": "git-cz",
     "lint": "eslint ./index.js ./lib --ext .js",
-    "test": "jest"
+    "test": "jest",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "repository": {
     "type": "git",

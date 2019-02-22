@@ -2,7 +2,7 @@ const path = require('path');
 
 const compiler = require('./compiler');
 
-describe('data', () => {
+describe('include', () => {
   test('should generate correct code', async () => {
     const stats = await compiler('fixtures/include.njk', {
       root: path.resolve(__dirname, 'fixtures'),
