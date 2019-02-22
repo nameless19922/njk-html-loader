@@ -1,2 +1,41 @@
-# njk-html-loader
-Nunjucks HTML loader for webpack
+# Njk HTML loader for webpack
+
+## Usage
+
+In your sources:
+
+``` javascript
+const html = require('./file.njk')
+// => returns file.njk content as html compiled string
+```
+
+In your webpack.config.js  file:
+
+## Using it with html-loader
+
+`njk-html-loader` encode to content to a string variable to avoid it and pass the string content to the loader chain please use the following configuration:
+
+```javascript
+module.exports = {
+  // your config settings ...
+  module: {
+    rules: [{
+      test: /\.njk$/,
+      use: [
+        {
+          loader: "html-loader"
+        },
+        {
+          loader: 'njk-html-lodaer',
+          options: {
+            root: 'path/to/njk files',
+            data: {
+              object: data,
+            },
+          }
+        },
+      ],
+    }],
+  },
+};
+```
