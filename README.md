@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/njk-html-loader.svg)](https://www.npmjs.com/package/njk-html-loader)
+
 # Njk HTML loader for webpack
 
 ## Installation
