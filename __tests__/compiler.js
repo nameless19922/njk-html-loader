@@ -20,14 +20,14 @@ module.exports = (fixture, options = {}) => {
         test: /\.njk$/,
         use: [
           {
-            loader: "html-loader"
+            loader: 'html-loader'
           },
           {
             loader: path.resolve(process.cwd(), 'index.js'),
             options: {
               root: options.root,
               data: options.data,
-            }
+            },
           },
         ],
       }],
