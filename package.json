@@ -6,7 +6,11 @@
   "keywords": [
     "webpack",
     "config",
-    "js"
+    "loader",
+    "js",
+    "nunjucks",
+    "html",
+    "template"
   ],
   "jest": {
     "moduleFileExtensions": [
