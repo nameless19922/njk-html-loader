@@ -25,6 +25,8 @@ In your webpack.config.js  file:
 
 `njk-html-loader` encode to content to a string variable to avoid it and pass the string content to the loader chain please use the following configuration:
 
+###Base config
+
 ```javascript
 module.exports = {
   // your config settings ...
@@ -37,15 +39,71 @@ module.exports = {
         },
         {
           loader: 'njk-html-lodaer',
-          options: {
-            root: 'path/to/njk files',
-            data: {
-              object: data,
-            },
-          }
         },
       ],
     }],
   },
 };
 ```
+
+###Options
+
+####root
+   Parameter to set the root template directory (String or Array): 
+   
+   ```javascript
+   module.exports = {
+     // your config settings ...
+     module: {
+       rules: [{
+         test: /\.njk$/,
+         use: [
+           {
+             loader: "html-loader"
+           },
+           {
+             loader: 'njk-html-lodaer',
+             options: {
+               root: 'path/to/njk files',
+             },
+           },
+         ],
+       }],
+     },
+   };
+   ```
+   
+ ####data
+ Object data to use for all templates in the loader (Object): 
+ 
+ ```javascript
+ module.exports = {
+   // your config settings ...
+   module: {
+     rules: [{
+       test: /\.njk$/,
+       use: [
+         {
+           loader: "html-loader"
+         },
+         {
+           loader: 'njk-html-lodaer',
+           options: {
+             data: {
+               a: 'a',
+               b: 'b',
+             },
+           },
+         },
+       ],
+     }],
+   },
+ };
+ ```
+ 
+ ```html
+<div>
+	<div>{{ a }}</div>
+	<div>{{ b }}</div>
+</div> 
+ ```
