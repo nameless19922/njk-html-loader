@@ -2,6 +2,12 @@ const path = require('path');
 const webpack = require('webpack');
 const memoryfs = require('memory-fs');
 
+/**
+ * Runs test build
+ * @param {string} fixture
+ * @param {options} options
+ * @returns {Promise<any>}
+ */
 module.exports = (fixture, options = {}) => {
   const compiler = webpack({
     mode: 'none',
