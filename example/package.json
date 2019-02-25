@@ -1,0 +1,13 @@
+{
+  "name": "njk-html-loader-example",
+  "description": "Nunjucks HTML loader Example",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production"
+  },
+  "devDependencies": {
+    "raw-loader": "^1.0.0",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
+  }
+}
