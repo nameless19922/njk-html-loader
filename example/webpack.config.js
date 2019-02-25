@@ -18,7 +18,11 @@ module.exports = {
         {
           loader: '../',
           options: {
-            root: ['./a', './b']
+            root: ['./a', './b'],
+            data: {
+              a: 'a',
+              b: 'b',
+            },
           },
         },
       ],

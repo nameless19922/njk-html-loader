@@ -38,7 +38,7 @@ module.exports = {
           loader: "html-loader"
         },
         {
-          loader: 'njk-html-lodaer',
+          loader: 'njk-html-loader',
         },
       ],
     }],
@@ -62,7 +62,7 @@ module.exports = {
              loader: "html-loader"
            },
            {
-             loader: 'njk-html-lodaer',
+             loader: 'njk-html-loader',
              options: {
                root: 'path/to/njk files',
              },
@@ -87,7 +87,7 @@ module.exports = {
            loader: "html-loader"
          },
          {
-           loader: 'njk-html-lodaer',
+           loader: 'njk-html-loader',
            options: {
              data: {
                a: 'a',
