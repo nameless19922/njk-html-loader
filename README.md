@@ -1,7 +1,7 @@
 [![npm version](https://badge.fury.io/js/njk-html-loader.svg)](https://www.npmjs.com/package/njk-html-loader)
 
-- [ ] Passing an array to the root
-- [ ] Add example
+- [x] Passing an array to the root
+- [x] Add example
 - [ ] Refactoring
 
 # Njk HTML loader for webpack
