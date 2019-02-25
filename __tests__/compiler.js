@@ -5,7 +5,7 @@ const memoryfs = require('memory-fs');
 /**
  * Runs test build
  * @param {string} fixture
- * @param {options} options
+ * @param {object} options
  * @returns {Promise<any>}
  */
 module.exports = (fixture, options = {}) => {
