@@ -35,7 +35,7 @@ module.exports = {
       test: /\.njk$/,
       use: [
         {
-          loader: "html-loader"
+          loader: 'html-loader',
         },
         {
           loader: 'njk-html-loader',
@@ -59,7 +59,7 @@ module.exports = {
          test: /\.njk$/,
          use: [
            {
-             loader: "html-loader"
+             loader: 'html-loader',
            },
            {
              loader: 'njk-html-loader',
@@ -84,7 +84,7 @@ module.exports = {
        test: /\.njk$/,
        use: [
          {
-           loader: "html-loader"
+           loader: 'html-loader',
          },
          {
            loader: 'njk-html-loader',
