@@ -25,7 +25,7 @@ In your webpack.config.js  file:
 
 `njk-html-loader` encode to content to a string variable to avoid it and pass the string content to the loader chain please use the following configuration:
 
-###Base config
+### Base config
 
 ```javascript
 module.exports = {
@@ -46,9 +46,9 @@ module.exports = {
 };
 ```
 
-###Options
+### Options
 
-####root
+#### root
    Parameter to set the root template directory (String or Array): 
    
    ```javascript
@@ -73,7 +73,7 @@ module.exports = {
    };
    ```
    
- ####data
+ #### data
  Object data to use for all templates in the loader (Object): 
  
  ```javascript
