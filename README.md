@@ -2,6 +2,8 @@
 
 - [x] Passing an array to the root
 - [x] Add example
+- [ ] Customizing syntax for nunjucks tags
+- [ ] Add a custom filters
 - [ ] Refactoring
 
 # Njk HTML loader for webpack
