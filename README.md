@@ -103,9 +103,80 @@ module.exports = {
  };
  ```
  
- ```html
+```html
 <div>
-	<div>{{ a }}</div>
-	<div>{{ b }}</div>
+  <div>{{ a }}</div>
+  <div>{{ b }}</div>
 </div> 
- ```
+```
+ 
+ #### env.filters
+ Object data to use for all templates in the loader (Object): 
+ 
+```javascript
+module.exports = {
+  // your config settings ...
+  module: {
+    rules: [{
+      test: /\.njk$/,
+      use: [
+        {
+          loader: 'html-loader',
+        },
+        {
+          loader: 'njk-html-loader',
+          options: {
+            env: {
+              filters: {
+                shorten(value, count) {
+                  return value.slice(count || 5);
+                },
+              },
+            },
+          },
+        },
+      ],
+    }],
+  },
+};
+```
+ 
+```html
+{% set message = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.' %}
+
+{# Show the first 20 characters #}
+A message for you: {{ message|shorten(20) }}
+```
+more info: https://mozilla.github.io/nunjucks/api.html#custom-filters
+
+
+#### env.extensions
+```javascript
+function Ext(){}
+ 
+module.exports = {
+  // your config settings ...
+  module: {
+    rules: [{
+      test: /\.njk$/,
+      use: [
+        {
+          loader: 'html-loader',
+        },
+        {
+          loader: 'njk-html-loader',
+          options: {
+            env: {
+              extensions: {
+                ext: new Ext(),
+              },
+            },
+          },
+        },
+      ],
+    }],
+  },
+};
+```
+
+more info: https://mozilla.github.io/nunjucks/api.html#custom-tags
