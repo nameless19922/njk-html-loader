@@ -23,6 +23,16 @@ module.exports = {
               a: 'a',
               b: 'b',
             },
+            env: {
+              filters: {
+                shorten(value, count) {
+                  return value.slice(count || 5);
+                },
+                upper(value) {
+                  return value.toUpperCase();
+                },
+              },
+            },
           },
         },
       ],

@@ -6,20 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="format-detection" content="telephone=no">
   <meta name="format-detection" content="address=no">
-  <title>Example</title>
+  <title>Filter</title>
 </head>
 <body>
-  {% include "a.njk" %}
-  {% include "b.njk" %}
-  {% include "a.njk" %}
-  {% include "b.njk" %}
-
   {% set message = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.' %}
+
+  {# Show the first 5 characters #}
+  A message for you: {{ message|shorten }}
 
   {# Show the first 20 characters #}
   A message for you: {{ message|shorten(20) }}
-
-  {# Converts a string to uppercase letters #}
-  A message for you: {{ message|upper }}
 </body>
 </html>

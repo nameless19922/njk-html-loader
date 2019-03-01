@@ -12,7 +12,7 @@ module.exports = async function (source) {
   const callback = this.async();
 
   try {
-    const loader = new Loader(source, this, options.root);
+    const loader = new Loader(source, this, options);
 
     callback(null, await loader.render(options.data));
   } catch (exc) {

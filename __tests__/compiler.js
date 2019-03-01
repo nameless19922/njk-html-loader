@@ -30,10 +30,7 @@ module.exports = (fixture, options = {}) => {
           },
           {
             loader: path.resolve(process.cwd(), 'index.js'),
-            options: {
-              root: options.root,
-              data: options.data,
-            },
+            options,
           },
         ],
       }],

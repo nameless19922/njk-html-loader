@@ -1,6 +1,6 @@
 {
   "name": "njk-html-loader",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Nunjucks HTML loader for webpack",
   "main": "index.js",
   "keywords": [
