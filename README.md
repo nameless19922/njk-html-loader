@@ -2,6 +2,8 @@
 
 - [x] Passing an array to the root
 - [x] Add example
+- [ ] Customizing syntax for nunjucks tags
+- [ ] Add a custom filters
 - [ ] Refactoring
 
 # Njk HTML loader for webpack
@@ -35,7 +37,7 @@ module.exports = {
       test: /\.njk$/,
       use: [
         {
-          loader: "html-loader"
+          loader: 'html-loader',
         },
         {
           loader: 'njk-html-loader',
@@ -59,7 +61,7 @@ module.exports = {
          test: /\.njk$/,
          use: [
            {
-             loader: "html-loader"
+             loader: 'html-loader',
            },
            {
              loader: 'njk-html-loader',
@@ -84,7 +86,7 @@ module.exports = {
        test: /\.njk$/,
        use: [
          {
-           loader: "html-loader"
+           loader: 'html-loader',
          },
          {
            loader: 'njk-html-loader',
