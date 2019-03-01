@@ -2,7 +2,7 @@
 
 - [x] Passing an array to the root
 - [x] Add example
-- [ ] Customizing syntax for nunjucks tags
+- [x] Customizing syntax for nunjucks tags
 - [x] Add a custom filters
 - [x] Refactoring
 
