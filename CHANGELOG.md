@@ -1,3 +1,13 @@
+# [1.2.0](https://github.com/nameless19922/njk-html-loader/compare/v1.1.0...v1.2.0) (2019-03-01)
+
+
+### Features
+
+* add custom filters ([3564261](https://github.com/nameless19922/njk-html-loader/commit/3564261))
+* feat: add custom extensions ([399f77d](https://github.com/nameless19922/njk-html-loader/commit/399f77d))
+
+
+
 # [1.1.0](https://github.com/nameless19922/njk-html-loader/compare/1.1.0...v1.1.0) (2019-02-25)
 
 
