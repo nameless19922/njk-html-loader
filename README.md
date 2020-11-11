@@ -109,6 +109,36 @@ module.exports = {
   <div>{{ b }}</div>
 </div> 
 ```
+You can also include data from .json files with [nunjucks-includeData](https://github.com/VincentLeung/nunjucks-includeData) in your templates.
+
+ #### configuration
+ Object containing nunjucks options:
+ 
+ ```javascript
+ module.exports = {
+   // your config settings ...
+   module: {
+     rules: [{
+       test: /\.njk$/,
+       use: [
+         {
+           loader: 'html-loader',
+         },
+         {
+           loader: 'njk-html-loader',
+           options: {
+             configuration: {
+               autoescape: false,
+               trimBlocks: true,
+             },
+           },
+         },
+       ],
+     }],
+   },
+ };
+ ```
+more info: https://mozilla.github.io/nunjucks/api.html#configure
  
  #### env.filters
  Object data to use for all templates in the loader (Object): 
